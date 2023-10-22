@@ -1,0 +1,189 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 10px;
+    padding: 0;
+    background-color: #f5ece7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.chat-container {
+    height: auto;
+    width: 750px;
+    background-color: #fff;
+    border: 1px solid #d1d1d1;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 10px;
+    padding: 10px;
+}
+
+textarea {
+    height: 110px;
+    resize: none;
+}
+
+.chat-messages {
+    padding: 20px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.message {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    word-wrap: break-word;
+}
+
+.received {
+    background-color: #e9e9e9;
+    text-align: left;
+}
+
+.sent {
+    background-color: #44aa69;
+    color: #fff;
+    text-align: right;
+}
+
+.input-container {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+}
+
+.title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 75px;
+    color: #955;
+    font-weight: bold;
+    font-style: italic;
+    margin: 10px;
+    padding: 0;
+    text-align: center;
+    align-items: center;
+}
+
+.list-item-container {
+    font-family: 'Roboto', sans-serif;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: #ddd;
+    color: #666;
+}
+
+.list-item-title {  
+    font-size: 20px;
+    margin: 10px;
+    padding: 0;
+}
+
+.list-item-desc {
+    font-size: 20px;
+    margin: 10px;
+    color: #888;
+}
+
+.message-input {
+    font-family: 'Roboto', sans-serif;
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 20px;
+    background-color: #ddd;
+    color: #555;
+}
+
+.surrounding-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: #888;
+    margin: 10px;
+}
+
+.results-container {
+    max-height: 600px;
+    overflow-y: auto;
+    transition: height 1.0s;
+}
+
+h1 {
+    font-size: 25px;
+    color: #555;
+    margin: 10px;
+    padding: 0;
+    text-align: center;
+    align-items: center;
+}
+
+button {
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #a88;
+    color: #ffffff;
+    cursor: pointer;
+    outline: none;
+}
+
+#send-button {
+    width: 100%;
+}
+
+button:hover {
+    background-color: #a44;
+}
+
+button:active {
+    background-color: #a99;
+}
+
+/* Outros estilos... */
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.invisible {
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.visible {
+    opacity: 1; /* Quando a classe 'visible' é adicionada, a opacidade é definida como 1 */
+    transition: opacity 0.5s;
+}
+
+/* Outros estilos... */
+
+.icon-button {
+    background-color: #a88;
+    color: #fff;
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    outline: none;
+    text-align: center;
+    width: 100px; /* Defina a largura desejada para todos os botões */
+}
+
+.icon-button i {
+    display: block;
+    font-size: 4em;
+    margin-bottom: 5px;
+}

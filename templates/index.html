@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <title></title>
+</head>
+<body>
+    <table> 
+        <tr>
+            <td>
+                <img src="static/logo.jpeg" width=300> 
+                <div class="title" id="title"> InterText </div>
+            </td>
+            <td width="200"> 
+                &nbsp
+            </td>
+            <td>
+                <div class="chat-container" id="chat-container">
+                    <div class="input-container">
+                        <input type="text" class="message-input" id="title-input" placeholder="Song title...">
+                    </div>
+                    <div class="input-container">
+                        <textarea type="text" class="message-input" id="lyrics-input" placeholder="Song lyrics..." rows="4" id="lyrics"></textarea>
+                    </div>
+                    <div class="input-container">
+                        <button id="send-button">Send</button>
+                    </div>
+                </div>
+                <div class="chat-container results-container invisible" id="results-container">
+                    <h1 id="title-container"></h1>
+
+                    <p id="summary-container" class="surrounding-text invisible"></p>
+                    <div class="result-subcontainer invisible" id="books-container"> </div>
+                    <div class="result-subcontainer invisible" id="movies-container"> </div>
+                    <div class="result-subcontainer invisible" id="articles-container"> </div>
+
+                    <div class="result-subcontainer invisible" id="songs-container">
+                        <div class="list-item-title" id="songs-title"></div>
+                        <div class="list-item-desc" id="songs-artist" style="font-style: italic;"></div>
+                        <div class="list-item-desc" id="songs-lyrics"></div>
+                    </div>
+                </div>
+                <div class="button-container">
+                    <button class="icon-button" id="song-button">
+                        <i class="fas fa-3x fa-music"></i>
+                        <br>
+                        Songs
+                    </button>
+                    <button class="icon-button" id="book-button">
+                        <i class="fas fa-3x fa-book"></i>
+                        <br>
+                        Books
+                    </button>
+                    <button class="icon-button" id ="movie-button">
+                        <i class="fas fa-3x fa-film"></i>
+                        <br>
+                        Movies
+                    </button>
+                    <button class="icon-button" id="article-button">
+                        <i class="fa-brands fa-wikipedia-w"></i>
+                        <br>
+                        Articles
+                    </button>
+                </div>
+            </td>
+        </tr>
+    </table>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
