@@ -13,7 +13,7 @@ O programa InterText, desenvolvido para o Hackathon da Cohere, teve o objetivo d
 
 ## Limitações do repositório
 
-Há uma limitação de tamanho de arquivo no github, e por isso não foi possível subir os arquivos .csv, já que o mesmo é muito grande. Por isso, foi incluído um arquivo "sample_embeddings.csv", com estrutura idêntica ao utilizado na aplicação. Os embeddings foram gerados com o modelo embed-english-2.0.
+Há uma limitação de tamanho de arquivo no github, e por isso não foi possível subir os arquivos .csv, já que o mesmo é muito grande. Por isso, foi incluído um arquivo "sample_embeddings.csv", com estrutura idêntica ao utilizado na aplicação. Os embeddings(vetores extraídos) foram gerados com o modelo embed-english-2.0.
 
 ## Uso
 
